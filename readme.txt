@@ -1,6 +1,9 @@
-(Yes im using a .txt file cause i dont know how to use.md files ;-;)
+(Yes im using a .txt file cause i dont know how to use .md files ;-;)
 
 Tugas Besar Analisis Kompleksitas Algotitma oleh Benedictus Daniel Widiyatmoko dan [Insert your name here].
+Ini adalah Github Repository sebagai penyimpanan kodenya tugas besar kami.
+mohon orang lain yang tidak terlibat dengan tugas ini tidak membuka, mengubah, meng-commit apapun ke kodebase ini.
+(Anyone unaffiliated with this project or assignment do NOT open, change, or commit anything to this codebase)
 
 Tugasnya adalah analisis kompleksitas waktu algoritma sorting untuk data struktur linked list. 
 Ini sebab sering gunanya linked list dalam berbagai bidang dari memory management hingga storage management sebab linked list efisien dalam memory usagenya
