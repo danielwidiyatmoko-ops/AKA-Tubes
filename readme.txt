@@ -13,7 +13,7 @@ Bubble Sort,
 Insertion Sort,
 Selection Sort,
 Merge Sort, dan
-Quick Sort
+Quick Sort.
 
 Kita memiliki dataset sendiri yang dibuat dengan bantuan excel dengan fungsi RANDARRAY() untuk menghasilkan random number sebanyak 10,100,1000,dan 10000 nomor.
 
