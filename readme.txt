@@ -4,3 +4,7 @@ Tugas Besar Analisis Kompleksitas Algotitma oleh Benedictus Daniel Widiyatmoko d
 
 Tugasnya adalah analisis kompleksitas waktu algoritma sorting untuk data struktur linked list. 
 Ini sebab sering gunanya linked list dalam berbagai bidang dari memory management hingga storage management sebab linked list efisien dalam memory usagenya
+
+
+Note: cara compile:
+g++ .\main,cpp .\linkedlist.cpp -0 .\test.exe
