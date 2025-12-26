@@ -15,5 +15,5 @@ Quick Sort
 Kita memiliki dataset sendiri yang dibuat dengan bantuan excel dengan fungsi RANDARRAY() untuk menghasilkan random number sebanyak 10,100,1000,dan 10000 nomor.
 
 Command compile yang digunakan dengan Gnu C++ Compiler:
-g++ .\main,cpp .\linkedlist.cpp -0 .\test.exe
+g++ .\main,cpp .\linkedlist.cpp -o .\test.exe
 
