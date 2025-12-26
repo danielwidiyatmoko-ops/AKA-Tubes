@@ -11,6 +11,11 @@ int main(){
         P1 = alokasi(sample10[i]);
         insertFirst(L, P1);
     }
-    printInfo(L); // Output: 5
+    cout << "Before Sorting: ";
+    printInfo(L);
+    bubbleSort(L);
+    cout << endl;
+    cout << "After Bubble Sort: ";
+    printInfo(L);
     return 0;
 }
