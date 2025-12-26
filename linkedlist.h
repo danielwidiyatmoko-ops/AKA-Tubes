@@ -19,7 +19,6 @@ void createList(linkedlist &L);
 address alokasi(int x);
 void insertFirst(linkedlist &L, address P);
 void insertLast(linkedlist &L, address P);
-//edit for refference
 //sorting operation
 void bubbleSort(linkedlist &L);
 void insertSort(linkedlist &L);
