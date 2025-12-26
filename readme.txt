@@ -1,4 +1,4 @@
-(Yes were using a .txt file cause i dont know how to use.md files ;-;)
+(Yes im using a .txt file cause i dont know how to use.md files ;-;)
 
 Tugas Besar Analisis Kompleksitas Algotitma oleh Benedictus Daniel Widiyatmoko dan [Insert your name here].
 
