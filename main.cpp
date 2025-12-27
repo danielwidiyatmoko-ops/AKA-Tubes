@@ -9,18 +9,18 @@ int main(){
     linkedlist L;
     createList(L);
     address P1;
-    for(int i=0; i<10000; i++){
-        P1 = alokasi(sample10000[i]);
+    for(int i=0; i<10e5; i++){
+        P1 = alokasi(rsample100k[i]);
         insertFirst(L, P1);
     }
     cout << "Before Sorting: ";
-    printInfo(L);
+    cout << L.first->info <<", "<<L.first->next->info << " ... " <<L.last->prev->info << ", " << L.last->info << endl;
     auto start = high_resolution_clock::now();
     mergeSort(L);
     auto end = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(end - start);
-    cout << "After Merge Sort: ";   
-    printInfo(L);
-    cout << "Time taken by Merge Sort: " << duration.count() << " microseconds" << endl;
+    cout << "After Sort: ";   
+    cout << L.first->info <<", "<<L.first->next->info << " ... " <<L.last->prev->info << ", " << L.last->info << endl;
+    cout << "Time taken by Sort: " << duration.count() << " microseconds" << endl;
     return 0;
 }

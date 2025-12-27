@@ -115,28 +115,51 @@ void selectSort(linkedlist &L){
 
 // Merges two sorted lists (first node as a) and (first node as b)
 address mergeLists(address a, address b) {
+    // 1. Base cases
     if (a == NULL) return b;
     if (b == NULL) return a;
 
-    address result = NULL;
+    address head = NULL;
+    address tail = NULL;
 
-    // Pick either a or b, and recurse
+    // 2. Pick the initial head
     if (a->info <= b->info) {
-        result = a;
-        result->next = mergeLists(a->next, b);
-        if (result->next != NULL) {
-            result->next->prev = result; 
-        }
-        result->prev = NULL; // Ensure head prev is NULL
+        head = a;
+        a = a->next;
     } else {
-        result = b;
-        result->next = mergeLists(a, b->next);
-        if (result->next != NULL) {
-            result->next->prev = result;
-        }
-        result->prev = NULL;
+        head = b;
+        b = b->next;
     }
-    return result;
+    
+    // Maintain the double link structure
+    head->prev = NULL;
+    tail = head;
+
+    // 3. Loop while both lists have data
+    while (a != NULL && b != NULL) {
+        if (a->info <= b->info) {
+            tail->next = a;
+            a->prev = tail; 
+            tail = a;
+            a = a->next;
+        } else {
+            tail->next = b;
+            b->prev = tail; 
+            tail = b;
+            b = b->next;
+        }
+    }
+
+    // 4. Attach the remaining part (if any)
+    if (a != NULL) {
+        tail->next = a;
+        a->prev = tail;
+    } else if (b != NULL) {
+        tail->next = b;
+        b->prev = tail;
+    }
+
+    return head;
 }
 
 // Splits the list into two halves
