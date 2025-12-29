@@ -107,7 +107,10 @@ void runRandomBenchmark(linkedlist &L, int algorithmChoice, int n) {
         P = alokasi(angkaAcak);
         insertFirst(L, P);
     }
-
+    cout << "Before Sorting (Head...Tail): " 
+             << L.first->info << ", " << L.first->next->info 
+             << " ... " 
+             << L.last->prev->info << ", " << L.last->info << endl;
     // Benchmark
     auto start = high_resolution_clock::now();
     switch (algorithmChoice)
@@ -131,7 +134,10 @@ void runRandomBenchmark(linkedlist &L, int algorithmChoice, int n) {
         break;
     }
     auto end = high_resolution_clock::now();
-    
+    cout << "After Sorting (Head...Tail): " 
+             << L.first->info << ", " << L.first->next->info 
+             << " ... " 
+             << L.last->prev->info << ", " << L.last->info << endl;
     auto duration = duration_cast<microseconds>(end - start);
     cout << ">> Time taken (Random Generated): " << duration.count() << " microseconds" << endl;
     
