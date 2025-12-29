@@ -183,14 +183,13 @@ void runAllBenchmarksandTabulate(linkedlist &L, microseconds results[5][6]) {
         }
     }
     cout << "\n================== BENCHMARK RESULTS ==================" << endl;
-    printf("%-18s| %-10s | %-10s | %-10s | %-10s | %-10s | %-10s |\n", "Algoritma\\Dataset", "rsample10", "rsample100", "rsample1k", "rsample10k", "rsample100k", "rsample1m");
-    //cout << "Algoritma\\Dataset | rsample10 | rsample100 | rsample1k | rsample10k | rsample100k | rsample1m" << endl;
+    printf("%-18s| %-12s | %-12s | %-12s | %-12s | %-12s | %-12s |\n", "Algoritma\\Dataset", "rsample10", "rsample100", "rsample1k", "rsample10k", "rsample100k", "rsample1m");
     cout << "-----------------------------------------------------------------------------------------" << endl;
-    string algNames[5] = {"Bubble Sort   ", "Insertion Sort", "Selection Sort", "Merge Sort    ", "Quick Sort    "};
+    string algNames[5] = {"Bubble Sort", "Insertion Sort", "Selection Sort", "Merge Sort", "Quick Sort"};
     for(int i = 0; i < 5; i++){
-        printf("%-18s| ", algNames[i].c_str());
+        printf("%-18s|", algNames[i].c_str());
         for(int j = 0; j < 6; j++){
-            printf(" %-10lld |", results[i][j].count());
+            printf(" %-10lldus |", results[i][j].count());
         }
         cout << endl;
     }
