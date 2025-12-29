@@ -244,6 +244,7 @@ void selectDatasetSize(linkedlist &L, int algorithmChoice) {
                 break;
             default: cout << "Pilihan tidak valid!" << endl;
         }
+        freeLinkedList(L); // Bersihkan list setelah setiap benchmark
         
     }
 }

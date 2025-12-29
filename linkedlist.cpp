@@ -74,21 +74,19 @@ void insertSort(linkedlist &L){
     }else if (L.first == L.last){ //only one element
         // nothing to sort
     } else { //more than one element aka something to sort
-        P=L.first;
+        P=L.first->next;
         while(P!= nullptr){
-            Q = P->next;
-            while(Q != nullptr){
-                if(P->info > Q->info){
-                    //swap info
-                    int temp = P->info;
-                    P->info = Q->info;
-                    Q->info = temp;
-                }
-                Q = Q->next;
+            int temp = P->info;
+            Q = P->prev;
+            while(Q != nullptr && temp < Q->info){
+                Q->next->info = Q->info;
+                Q->info = temp;
+                Q = Q->prev;
             }
             P = P->next;
         }
     }
+    printInfo(L);
 }
 void selectSort(linkedlist &L){
     if(L.first == NULL) return; //empty list
