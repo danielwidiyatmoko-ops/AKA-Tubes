@@ -15,8 +15,10 @@ Selection Sort,
 Merge Sort, dan
 Quick Sort.
 
-Kita memiliki dataset sendiri yang dibuat dengan bantuan excel dengan fungsi RANDARRAY() untuk menghasilkan random number sebanyak 10,100,1000,dan 10000 nomor.
+Kita memiliki dataset sendiri yang dibuat dengan bantuan excel dengan fungsi RANDARRAY() untuk menghasilkan random number sebanyak 10,100,1000,10000,100000,dan 1000000 nomor.
 
 Command compile yang digunakan dengan Gnu C++ Compiler:
-g++ .\main,cpp .\linkedlist.cpp -o .\test.exe
+g++ .\main,cpp .\linkedlist.cpp -o .\benchmark
+
+lalu run saja file benchmark di folder samamnya
 
