@@ -86,7 +86,6 @@ void insertSort(linkedlist &L){
             P = P->next;
         }
     }
-    printInfo(L);
 }
 void selectSort(linkedlist &L){
     if(L.first == NULL) return; //empty list
