@@ -1,0 +1,5 @@
+okay so the todo list:
+1. create a ui to select dataset size and select sorting algorithm
+2. perhaps create even more varied datasets (the ones ive made are just randomly made with excel. maybe add an already sorted or backwards sorted one to see what happens)
+3. benchmark the living shiet out of it (preferably using the same computer or even better a virtual machine with minimum ram and cpu)
+4. understand how in the everloving fuck quicksort and mergesort works
