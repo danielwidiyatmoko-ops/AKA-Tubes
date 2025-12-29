@@ -190,7 +190,7 @@ void runAllBenchmarksandTabulate(linkedlist &L, microseconds results[5][6]) {
     for(int i = 0; i < 5; i++){
         printf("%-18s| ", algNames[i].c_str());
         for(int j = 0; j < 6; j++){
-            printf(" %-10lld|", results[i][j].count());
+            printf(" %-10lld |", results[i][j].count());
         }
         cout << endl;
     }
